@@ -1,0 +1,153 @@
+{
+  "rows": [
+    {
+      "kind": "current",
+      "plasma_current": 250000.0,
+      "energy_ev": 10000.0,
+      "b_theta": 0.14583333341272145,
+      "measured": 0.0855003679325194,
+      "analytic": 0.10851373892027875,
+      "trapped": true,
+      "n_bounces": 2,
+      "pitch": 0.3
+    },
+    {
+      "kind": "current",
+      "plasma_current": 300000.0,
+      "energy_ev": 10000.0,
+      "b_theta": 0.17500000009526576,
+      "measured": 0.07388299361456636,
+      "analytic": 0.09042811576689894,
+      "trapped": true,
+      "n_bounces": 2,
+      "pitch": 0.3
+    },
+    {
+      "kind": "current",
+      "plasma_current": 350000.0,
+      "energy_ev": 10000.0,
+      "b_theta": 0.20416666677781006,
+      "measured": 0.06456907279075592,
+      "analytic": 0.0775098135144848,
+      "trapped": true,
+      "n_bounces": 3,
+      "pitch": 0.3
+    },
+    {
+      "kind": "current",
+      "plasma_current": 450000.0,
+      "energy_ev": 10000.0,
+      "b_theta": 0.26250000014289865,
+      "measured": 0.051246339807624094,
+      "analytic": 0.060285410511265965,
+      "trapped": true,
+      "n_bounces": 4,
+      "pitch": 0.3
+    },
+    {
+      "kind": "current",
+      "plasma_current": 600000.0,
+      "energy_ev": 10000.0,
+      "b_theta": 0.3500000001905315,
+      "measured": 0.03898169022647861,
+      "analytic": 0.04521405788344947,
+      "trapped": true,
+      "n_bounces": 5,
+      "pitch": 0.3
+    },
+    {
+      "kind": "current",
+      "plasma_current": 800000.0,
+      "energy_ev": 10000.0,
+      "b_theta": 0.46666666692070863,
+      "measured": 0.02945867968876484,
+      "analytic": 0.033910543412587105,
+      "trapped": true,
+      "n_bounces": 7,
+      "pitch": 0.3
+    },
+    {
+      "kind": "current",
+      "plasma_current": 1000000.0,
+      "energy_ev": 10000.0,
+      "b_theta": 0.5833333336508858,
+      "measured": 0.023556736213006413,
+      "analytic": 0.02712843473006969,
+      "trapped": true,
+      "n_bounces": 8,
+      "pitch": 0.3
+    },
+    {
+      "kind": "current",
+      "plasma_current": 1300000.0,
+      "energy_ev": 10000.0,
+      "b_theta": 0.7583333337461516,
+      "measured": 0.017958242596697288,
+      "analytic": 0.020868026715438213,
+      "trapped": true,
+      "n_bounces": 10,
+      "pitch": 0.3
+    },
+    {
+      "kind": "energy",
+      "plasma_current": 450000.0,
+      "energy_ev": 2500.0,
+      "b_theta": 0.26250000014289865,
+      "measured": 0.026187689910039696,
+      "analytic": 0.030142705255632982,
+      "trapped": true,
+      "n_bounces": 2,
+      "pitch": 0.3
+    },
+    {
+      "kind": "energy",
+      "plasma_current": 450000.0,
+      "energy_ev": 5000.0,
+      "b_theta": 0.26250000014289865,
+      "measured": 0.03673269529289097,
+      "analytic": 0.04262822257913093,
+      "trapped": true,
+      "n_bounces": 3,
+      "pitch": 0.3
+    },
+    {
+      "kind": "energy",
+      "plasma_current": 450000.0,
+      "energy_ev": 10000.0,
+      "b_theta": 0.26250000014289865,
+      "measured": 0.051246339807624094,
+      "analytic": 0.060285410511265965,
+      "trapped": true,
+      "n_bounces": 4,
+      "pitch": 0.3
+    },
+    {
+      "kind": "energy",
+      "plasma_current": 450000.0,
+      "energy_ev": 20000.0,
+      "b_theta": 0.26250000014289865,
+      "measured": 0.07059977652109439,
+      "analytic": 0.08525644515826186,
+      "trapped": true,
+      "n_bounces": 5,
+      "pitch": 0.3
+    },
+    {
+      "kind": "energy",
+      "plasma_current": 450000.0,
+      "energy_ev": 40000.0,
+      "b_theta": 0.26250000014289865,
+      "measured": 0.09417239779837736,
+      "analytic": 0.12057082102253193,
+      "trapped": true,
+      "n_bounces": 8,
+      "pitch": 0.3
+    }
+  ],
+  "fits": {
+    "exponent_vs_b_theta": -0.9496966268874754,
+    "prefactor_ratio_vs_analytic": 0.8434804189531878,
+    "exponent_vs_energy": 0.4635429783036605
+  },
+  "pitch": 0.3
+}
