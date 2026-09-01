@@ -1,0 +1,61 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    name: unit tests (py${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+      - name: Run test suite
+        run: pytest -q --durations=10
+
+  smoke:
+    # One Python version only: this job is about the scripts running end to
+    # end, not about interpreter compatibility.
+    #
+    # The experiment subset is chosen to touch every module at least once --
+    # E,F,G,H validate the field and integrator, J the Lorentz collisions,
+    # L the collisional threshold scan, N the Solov'ev equilibrium, P the
+    # field ripple -- and then to build the figures FROM THOSE RESULTS rather
+    # than from the committed ones. That ordering is deliberate: a --quick run
+    # produces fewer scan points than a production run, and a figure function
+    # with a hard-coded list of tick labels crashed on exactly that mismatch.
+    # Running make_figures against the committed results would not have caught
+    # it, because the committed results are full-resolution.
+    name: scripts run end to end
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+      - name: Smoke-test the experiment runner
+        run: python scripts/run_experiments.py --quick --only E,F,G,H,J,L,N,P
+      - name: Build figures from the results just generated
+        run: python scripts/make_figures.py
+      - name: Every figure the docs reference must exist
+        run: |
+          missing=0
+          for f in $(grep -oh "figures/[a-z_]*\.png" README.md RESULTS.md docs/*.md | sort -u); do
+            if [ ! -f "$f" ]; then echo "MISSING: $f"; missing=1; fi
+          done
+          exit $missing
