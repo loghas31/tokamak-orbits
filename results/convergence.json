@@ -1,0 +1,110 @@
+{
+  "gyroradius": [
+    {
+      "steps_per_gyroperiod": 10,
+      "radius_rel_error": 0.048182769337470864,
+      "energy_rel_error": 1.083210149653341e-14
+    },
+    {
+      "steps_per_gyroperiod": 20,
+      "radius_rel_error": 0.01226164154121032,
+      "energy_rel_error": 8.616444372242485e-15
+    },
+    {
+      "steps_per_gyroperiod": 40,
+      "radius_rel_error": 0.0030794834591336105,
+      "energy_rel_error": 3.323485686436387e-15
+    },
+    {
+      "steps_per_gyroperiod": 80,
+      "radius_rel_error": 0.0007707348480095931,
+      "energy_rel_error": 4.308222186121243e-15
+    },
+    {
+      "steps_per_gyroperiod": 160,
+      "radius_rel_error": 0.00019274555723137947,
+      "energy_rel_error": 4.185130123660636e-15
+    },
+    {
+      "steps_per_gyroperiod": 320,
+      "radius_rel_error": 4.8188993268716835e-05,
+      "energy_rel_error": 1.1939930058678872e-14
+    }
+  ],
+  "mu_vs_dt": [
+    {
+      "steps_per_gyroperiod": 20,
+      "mu_error_xi095": 0.13931089196359212,
+      "mu_error_xi045": 0.026499061805881012,
+      "energy_error": 3.4465777488969923e-15
+    },
+    {
+      "steps_per_gyroperiod": 40,
+      "mu_error_xi095": 0.1390807265792692,
+      "mu_error_xi045": 0.026464711890611465,
+      "energy_error": 5.416050748266702e-15
+    },
+    {
+      "steps_per_gyroperiod": 80,
+      "mu_error_xi095": 0.13900266559334432,
+      "mu_error_xi045": 0.026452309535497757,
+      "energy_error": 1.5386507807575862e-14
+    },
+    {
+      "steps_per_gyroperiod": 160,
+      "mu_error_xi095": 0.13896063337944212,
+      "mu_error_xi045": 0.026434815534155436,
+      "energy_error": 1.033973324669098e-14
+    },
+    {
+      "steps_per_gyroperiod": 320,
+      "mu_error_xi095": 0.13896911503778367,
+      "mu_error_xi045": 0.026435096143189563,
+      "energy_error": 2.7326437866254733e-14
+    }
+  ],
+  "mu_vs_rho": [
+    {
+      "energy_ev": 500.0,
+      "rho_over_a": 0.007613768313776172,
+      "mu_error": 0.030589205663306758
+    },
+    {
+      "energy_ev": 1000.0,
+      "rho_over_a": 0.010767494410108795,
+      "mu_error": 0.04334689439603742
+    },
+    {
+      "energy_ev": 2000.0,
+      "rho_over_a": 0.015227536627552343,
+      "mu_error": 0.06147656141991586
+    },
+    {
+      "energy_ev": 5000.0,
+      "rho_over_a": 0.02407684944835226,
+      "mu_error": 0.09774517503801633
+    },
+    {
+      "energy_ev": 10000.0,
+      "rho_over_a": 0.03404980702907494,
+      "mu_error": 0.1390807265792692
+    },
+    {
+      "energy_ev": 20000.0,
+      "rho_over_a": 0.04815369889670452,
+      "mu_error": 0.19836239476104878
+    },
+    {
+      "energy_ev": 40000.0,
+      "rho_over_a": 0.06809961405814988,
+      "mu_error": 0.283731863628572
+    }
+  ],
+  "observed_order": [
+    1.9743651814408294,
+    1.9933918502622898,
+    1.9983818514547116,
+    1.999537015929813,
+    1.999922039812717
+  ]
+}

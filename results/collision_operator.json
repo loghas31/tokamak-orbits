@@ -1,0 +1,46 @@
+{
+  "legendre": [
+    {
+      "nu_dt": 0.02,
+      "n_samples": 200000,
+      "noise_floor": 0.00223606797749979,
+      "ratio_l1": 1.0065415153095885,
+      "ratio_l2": 0.9716008543379554,
+      "ratio_l3": null
+    },
+    {
+      "nu_dt": 0.005,
+      "n_samples": 200000,
+      "noise_floor": 0.00223606797749979,
+      "ratio_l1": 1.0027515675482084,
+      "ratio_l2": 0.9967465220633364,
+      "ratio_l3": 0.9949319707078456
+    }
+  ],
+  "overshoot": [
+    {
+      "nu_dt": 0.005,
+      "overshoot_fraction": 0.0,
+      "max_abs_xi": 0.9975093930073203,
+      "bound": 0.9975093984519645
+    },
+    {
+      "nu_dt": 0.02,
+      "overshoot_fraction": 0.0,
+      "max_abs_xi": 0.9901515033920139,
+      "bound": 0.990151503558925
+    },
+    {
+      "nu_dt": 0.05,
+      "overshoot_fraction": 0.0,
+      "max_abs_xi": 0.9759610647892105,
+      "bound": 0.9759610647971567
+    },
+    {
+      "nu_dt": 0.1,
+      "overshoot_fraction": 0.0,
+      "max_abs_xi": 0.9539392012865312,
+      "bound": 0.9539392014169457
+    }
+  ]
+}
